@@ -42,7 +42,7 @@ header {
 }
 
 .navbar li:hover a {
-    color: #4e6a8f;
+    color: rgb(68, 91, 120);
     transform: translateY(-3px);
 }
 
@@ -99,7 +99,7 @@ header {
     font-size: 16px;
     font-weight: bold;
     /* Button Effects */
-     transition: background-color 0.3s, transform 0.3s;
+     transition: background-color 0.2s, transform 0.2s;
      cursor: pointer;
 }
 
@@ -113,7 +113,7 @@ header {
     background-color: #F9FAF8;
     display: flex;
     flex-direction: column;
-    height: 550px;
+    height: 570px;
 }
 
 .information-container h3 {
@@ -185,7 +185,7 @@ header {
 .quote-container {
     background-color: #E5E7EB;
     display: flex;
-    height: 400px;
+    height: 450px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -224,11 +224,27 @@ header {
 .action-container {
     background-color: #F9FAF8;
     height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-box {
+    display: flex;
+    height: 150px;
+    width: 1000px;
+    background-color: #3882F6;
+    border-radius: 10px;
+}
+
+.action-box h3 {
+    color: #F9FAF8;
+    font-weight: bold;
+    font-size: 23px;
 }
 
 footer {
     background-color: #1F2937;
-    color: #F9FAF8;
     height: 100px;
     display: flex;
     align-items: center;
@@ -236,5 +252,8 @@ footer {
 }
 
 footer a {
-    
+    color: #F9FAF8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
 }
