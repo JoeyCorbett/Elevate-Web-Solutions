@@ -35,11 +35,11 @@ header {
     text-decoration: none;
     color: #E5E7EB;
     font-size: 18px;
-    transition: color 0.2s
+    transition: color 0.3s
 }
 
 .navbar li a:hover {
-    color: #26A69A;
+    color: #3882F6;
 }
 
 .image img {
@@ -74,7 +74,11 @@ header {
 .hero-container button {
     background-color: #3882F6;
     color: #F9FAF8;
-    border-radius: 6px;
+    border: 0;
+    border-radius: 10px;
+    padding: 11px 35px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
