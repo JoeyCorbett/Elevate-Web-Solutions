@@ -115,13 +115,39 @@ header {
     display: flex;
     flex-direction: column;
     height: 600px;
-    align-items: center;
 }
 
 .information-container h3 {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
+    align-self: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.box-align {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    align-items: center;
+}
+
+.box {
+    border: 2px solid blue;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.box-align .text {
+    text-align: center;
+    font-size: 18px;
 }
 
 
