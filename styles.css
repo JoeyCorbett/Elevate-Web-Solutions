@@ -35,26 +35,18 @@ header {
     text-decoration: none;
     color: #E5E7EB;
     font-size: 18px;
-    transition: color 0.3s;
-    position: relative;
-    overflow: hidden;
     text-decoration: none;
+    color: #F9FAF8;
+    padding: 10px 15px;
+    display: block;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
 }
 
-.navbar li a:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #3882F6;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
+.navbar li:hover a {
+    color: #007bff;
+    transform: translateY(-3px);
 }
-
-.navbar li a:hover:after {
-    transform: scaleX(1)}
 
 .image img {
     border-radius: 180px;
