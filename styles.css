@@ -37,20 +37,22 @@ header {
     font-size: 18px;
     text-decoration: none;
     color: #F9FAF8;
-    padding: 10px 15px;
     display: block;
     position: relative;
     transition: color 0.3s, transform 0.3s;
 }
 
 .navbar li:hover a {
-    color: #007bff;
+    color: #056ad5;
     transform: translateY(-3px);
 }
 
 .image img {
     border-radius: 180px;
     box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
 }
 
 .header-content {
@@ -109,11 +111,23 @@ header {
 
 
 .information-container {
-    background-color: gray;
+    background-color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    align-items: center;
 }
 
+.information-container h3 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+}
+
+
 .quote-container {
-    background-color: orange;
+    background-color: #E5E7EB;
+    display: flex;
 }
 
 .action-container {
