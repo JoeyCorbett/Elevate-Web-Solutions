@@ -310,3 +310,47 @@ footer a, div {
 .fa-github:hover {
     animation: spin 1s linear infinite;
 }
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    background-color: #F9FAF8;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+.exit-container {
+    padding: 6px 15px 10px 10px;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    transition: color 0.2s, transform 0.15s;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(135, 135, 135);
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.modal-header {
+    color: #1F2937;
+    align-self: center;
+    padding-top: 14px;
+    font-size: 25px;
+    font-weight: bold;
+}
