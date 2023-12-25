@@ -326,6 +326,8 @@ footer div {
   animation: spin 1s linear infinite;
 }
 
+/* SIGN UP MODAL */
+
 .modal {
   display: none;
   position: fixed;
@@ -336,7 +338,7 @@ footer div {
   overflow: auto;
   background-color: #f9faf8;
   width: 350px;
-  height: 440px;
+  height: 520px;
   flex-direction: column;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2);
@@ -383,8 +385,24 @@ footer div {
   padding-top: 14px;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 40px;
-  margin-right: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-header .header {
+  margin-right: 20px;
+}
+
+.modal-subtext {
+  font-size: 15px;
+  text-align: center;
+  width: 230px;
+  margin-top: 10px;
+  color: #7b7a7a;
+  font: Lato;
 }
 
 .forms form {
@@ -409,28 +427,34 @@ form input {
 .modal .fa-user {
   position: absolute;
   left: 64px;
-  top: 41.5%;
+  top: 38.6%;
   transform: translateY(-50%);
 }
 
 .modal .fa-envelope {
   position: absolute;
   left: 64px;
-  top: 57.2%;
+  top: 51.9%;
+  transform: translateY(-50%);
+}
+
+.modal .fa-phone {
+  position: absolute;
+  left: 64px;
+  top: 65.1%;
+  transform: translateY(-50%);
+}
+
+.modal .fa-briefcase {
+  position: absolute;
+  left: 64px;
+  top: 78.4%;
   transform: translateY(-50%);
 }
 
 .forms ::placeholder {
   color: #7b7a7a;
   opacity: 1;
-  font-style: italic;
-}
-
-.modal .fa-phone {
-  position: absolute;
-  left: 64px;
-  top: 72.8%;
-  transform: translateY(-50%);
 }
 
 form input:focus {

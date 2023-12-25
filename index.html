@@ -125,16 +125,47 @@
           <span class="close">&times;</span>
         </div>
         <div class="modal-header">
-          <i class="fa-solid fa-right-to-bracket"></i> Sign Up
+          <div class="header">
+            <i class="fa-solid fa-right-to-bracket"></i> Sign Up
+          </div>
+          <div class="modal-subtext">
+            Take the first step to bring your business to the next level
+          </div>
         </div>
         <div class="forms">
           <form action="/submit-signup" method="post">
-            <input type="text" id="name" name="name" placeholder="Name" required />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
             <i class="fa-solid fa-user"></i>
-            <input type="email" id="email" name="email" placeholder="Email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
             <i class="fa-solid fa-envelope"></i>
-            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
             <i class="fa-solid fa-phone"></i>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              placeholder="Company Name"
+              required
+            />
+            <i class="fa-solid fa-briefcase"></i>
             <button type="submit">Submit</button>
           </form>
         </div>
