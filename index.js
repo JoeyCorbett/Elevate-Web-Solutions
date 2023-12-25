@@ -28,4 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Enable scrolling on page
     document.body.classList.remove('no-scroll');
   };
+
+  document.getElementById('modalBackdrop').onclick = function(event) {
+    if (event.target == this) {
+      this.style.display = 'none';
+    }
+  }
 });
