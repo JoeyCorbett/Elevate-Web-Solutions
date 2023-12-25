@@ -335,8 +335,8 @@ footer div {
   transform: translate(-50%, -50%);
   overflow: auto;
   background-color: #f9faf8;
-  width: 380px;
-  height: 500px;
+  width: 350px;
+  height: 440px;
   flex-direction: column;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2);
@@ -364,7 +364,7 @@ footer div {
 .close {
   color: black;
   float: right;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: bold;
   transition: color 0.2s, transform 0.1s;
 }
@@ -399,14 +399,38 @@ form input {
   border: 2px solid rgb(0, 0, 0);
   margin-top: 10px;
   margin-bottom: 20px;
-  width: 60%;
+  width: 70%;
   padding: 10px;
   box-sizing: border-box;
   transition: border-color 0.3s, box=shadow 0.3s;
+  padding-left: 34px;
 }
 
-form label {
-  font-size: 16px;
+.modal .fa-user {
+  position: absolute;
+  left: 64px;
+  top: 41.5%;
+  transform: translateY(-50%);
+}
+
+.modal .fa-envelope {
+  position: absolute;
+  left: 64px;
+  top: 57.2%;
+  transform: translateY(-50%);
+}
+
+.forms ::placeholder {
+  color: #7b7a7a;
+  opacity: 1;
+  font-style: italic;
+}
+
+.modal .fa-phone {
+  position: absolute;
+  left: 64px;
+  top: 72.8%;
+  transform: translateY(-50%);
 }
 
 form input:focus {
