@@ -40,4 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.classList.remove("no-scroll");
     }
   };
+
+  // Prevent submit button from re-directing
+  document.getElementById('Sign-up-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+  });
 });
