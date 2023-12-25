@@ -336,7 +336,7 @@ footer div {
   overflow: auto;
   background-color: #f9faf8;
   width: 400px;
-  height: 500px;
+  height: 520px;
   flex-direction: column;
   border: 5px solid black;
   border-radius: 15px;
@@ -366,9 +366,9 @@ footer div {
   color: #1f2937;
   align-self: center;
   padding-top: 14px;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .forms form {
@@ -379,16 +379,24 @@ footer div {
 }
 
 form input {
-  border-radius: 10px;
+  border-radius: 12px;
   border: 2px solid rgb(0, 0, 0);
-  width: 220px;
-  height: 20px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  width: 60%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box=shadow 0.3s;
 }
 
 form label {
-  font-weight: 500;
+  font-size: 16px;
+}
+
+form input:focus {
+  border-color: #1671e1;
+  outline: none;
+  box-shadow: 0 0 8px rgba(56, 130, 246, 0.6);
 }
 
 form button {
@@ -400,7 +408,7 @@ form button {
   cursor: pointer;
   background-color: #1f2937;
   color: white;
-
+  margin-top: 10px;
 }
 
 form button:hover {

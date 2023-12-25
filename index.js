@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('modalBackdrop').onclick = function(event) {
     if (event.target == this) {
       this.style.display = 'none';
+      // Enable scrolling on page
+      document.body.classList.remove('no-scroll');
     }
   }
 });
