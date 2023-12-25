@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const SignUpButton = document.querySelector(".Sign-up-button");
 
   // Grab Backdrop
-
   const backdrop = document.querySelector(".modal-backdrop");
 
   // Grab Span which closes
@@ -52,6 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
     });
 
+  // Format Email field for valid input
+    
   // Formats phone field for valid input
   document.getElementById("phone").addEventListener("input", function (e) {
     let x = e.target.value
