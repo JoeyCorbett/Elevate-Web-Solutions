@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   SignUpButton.onclick = function () {
     SignUpModal.style.display = "flex";
     // Enable animation
-    SignUpModal.classList.add('modal-animate');
+    SignUpModal.classList.add("modal-animate");
     backdrop.style.display = "flex";
     // Disable scrolling on page
     document.body.classList.add("no-scroll");
@@ -28,9 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
     SignUpModal.style.display = "none";
     backdrop.style.display = "none";
     // Disable animation
-    SignUpModal.classList.remove('show');
+    SignUpModal.classList.remove("show");
     // Enable scrolling on page
     document.body.classList.remove("no-scroll");
+    // Reset form fields
+    document.querySelector("#Sign-up-form form").reset();
   };
 
   document.getElementById("modalBackdrop").onclick = function (event) {
@@ -38,11 +40,25 @@ document.addEventListener("DOMContentLoaded", function () {
       this.style.display = "none";
       // Enable scrolling on page
       document.body.classList.remove("no-scroll");
+      // Reset form fields
+      document.querySelector("#Sign-up-form form").reset();
     }
   };
 
   // Prevent submit button from re-directing
-  document.getElementById('Sign-up-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+  document
+    .getElementById("Sign-up-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+    });
+
+  // Formats phone field for valid input
+  document.getElementById("phone").addEventListener("input", function (e) {
+    let x = e.target.value
+      .replace(/\D/g, "")
+      .match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+    e.target.value = !x[2]
+      ? x[1]
+      : "(" + x[1] + ") " + x[2] + (x[3] ? "-" + x[3] : "");
   });
 });
