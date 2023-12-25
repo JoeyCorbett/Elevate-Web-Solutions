@@ -407,3 +407,22 @@ form button:hover {
   background-color: #374a63;
   transform: scale(1.05);
 }
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Stops scrolling when modal is active on screen */
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}

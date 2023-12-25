@@ -119,21 +119,23 @@
       </div>
     </footer>
 
-    <div id="signupModal" class="modal">
-      <div class="exit-container">
-        <span class="close">&times;</span>
-      </div>
-      <div class="modal-header">Sign Up</div>
-      <div class="forms">
-        <form action="/submit-signup" method="post">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-          <label for="Phone Number">Phone Number</label>
-          <input type="tel" id="phone" name="phone" required />
-          <button type="submit">Submit</button>
-        </form>
+    <div id="modalBackdrop" class="modal-backdrop">
+      <div id="signupModal" class="modal">
+        <div class="exit-container">
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-header">Sign Up</div>
+        <div class="forms">
+          <form action="/submit-signup" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="Phone Number">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>
