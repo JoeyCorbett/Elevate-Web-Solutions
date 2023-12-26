@@ -51,8 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
     });
 
-  // Format Email field for valid input
-    
   // Formats phone field for valid input
   document.getElementById("phone").addEventListener("input", function (e) {
     let x = e.target.value
