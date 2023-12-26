@@ -3,8 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Grab Modal
   const SignUpModal = document.getElementById("signupModal");
 
-  // Grab Button
+  // Grab Sign Up Button
   const SignUpButton = document.querySelector(".Sign-up-button");
+
+  // Grab Contact Button
+  const ContactButton = document.querySelector(".Contact-Button")
 
   // Grab Backdrop
   const backdrop = document.querySelector(".modal-backdrop");
@@ -14,6 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Open Modal when clicked
   SignUpButton.onclick = function () {
+    SignUpModal.style.display = "flex";
+    // Enable animation
+    SignUpModal.classList.add("modal-animate");
+    backdrop.style.display = "flex";
+    // Disable scrolling on page
+    document.body.classList.add("no-scroll");
+  };
+
+  // Open Modal when clicked
+  ContactButton.onclick = function () {
     SignUpModal.style.display = "flex";
     // Enable animation
     SignUpModal.classList.add("modal-animate");
