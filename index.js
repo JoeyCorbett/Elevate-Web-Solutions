@@ -73,4 +73,24 @@ document.addEventListener("DOMContentLoaded", function () {
       ? x[1]
       : "(" + x[1] + ") " + x[2] + (x[3] ? "-" + x[3] : "");
   });
+
+  // Detects operating system and adjusts icons in modal to fit input fields
+  const isWindows = navigator.platform.toLowerCase().includes("win");
+
+  // Checks for windows and fixes icon formatting
+  if (isWindows) {
+    document.querySelectorAll(".modal .fa-user, .modal .fa-envelope, .modal .fa-phone, .modal .fa-briefcase").forEach(function (icon) {
+      const currentTop = parseFloat(icon.style.top || getComputedStyle(icon).top);
+    icon.style.top = currentTop + 1.8 + "%";
+    });
+  }
+
+  // Checks for windows and fixes padding on modal
+  if (isWindows) {
+    const modal = document.querySelector(".modal");
+    const currentHeight = parseFloat(modal.style.height || getComputedStyle(modal).height);
+    modal.style.height = currentHeight + 12 + "px";
+    console.log("got it");
+  }
+
 });
